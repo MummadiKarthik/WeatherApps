@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url('https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-jplenio-1118873.jpg&fm=jpg');
+}
+
+.container {
+    width: 500px;
+    color: white;
+    height: 550px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 50px;
+    background: linear-gradient(135deg, blue, rgb(15, 191, 222));
+}
+
+.searchs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.searchs input {
+    border: none;
+    outline: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    color: black;
+    background-color: #fff;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: rgba(235, 255, 252, 0.8);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(235, 255, 252, 1);
+}
+
+button img {
+    width: 20px;
+}
+
+.humidity {
+    display: flex;
+    gap: 10px;
+}
+
+.speed {
+    display: flex;
+    gap: 10px;
+}
+
+.hm-img {
+    height: 40px;
+    width: 50px;
+}
+
+.wind-img {
+    height: 40px;
+    width: 50px;
+}
+
+.details {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temp {
+    font-size: 43px;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Adjust container width for smaller screens */
+        padding: 30px; /* Adjust padding inside container */
+    }
+
+    .searchs input {
+        width: 100%; /* Make input full width on smaller screens */
+        max-width: 100%; /* Ensure input does not exceed screen width */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Further reduce padding for very small screens */
+    }
+
+    .temp {
+        font-size: 36px; /* Decrease font size for temperature on smaller screens */
+    }
+}
